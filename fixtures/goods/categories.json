@@ -1,1 +1,58 @@
-[{"model": "goods.categories", "pk": 6, "fields": {"name": "Все товары", "slug": "all"}}, {"model": "goods.categories", "pk": 7, "fields": {"name": "Кухня", "slug": "kuhnya"}}, {"model": "goods.categories", "pk": 8, "fields": {"name": "Спальня", "slug": "spalnya"}}, {"model": "goods.categories", "pk": 9, "fields": {"name": "Гостинная", "slug": "gostinnaya"}}, {"model": "goods.categories", "pk": 10, "fields": {"name": "Офис", "slug": "ofis"}}, {"model": "goods.categories", "pk": 11, "fields": {"name": "Фурнитура", "slug": "furnitura"}}, {"model": "goods.categories", "pk": 12, "fields": {"name": "Декор", "slug": "dekor"}}]
+[
+    {
+        "model": "goods.categories",
+        "pk": 6,
+        "fields": {
+            "name": "Все товары",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 7,
+        "fields": {
+            "name": "Торты",
+            "slug": "torty"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 8,
+        "fields": {
+            "name": "Порционные десерты",
+            "slug": "porcyonnyey deserty"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 9,
+        "fields": {
+            "name": "Чизкейки",
+            "slug": "chezkeyke"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 10,
+        "fields": {
+            "name": "Тарты",
+            "slug": "tarty"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 11,
+        "fields": {
+            "name": "Макароны",
+            "slug": "makarony"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 12,
+        "fields": {
+            "name": "Другое",
+            "slug": "drugoe"
+        }
+    }
+]

@@ -53,10 +53,10 @@
     </div>
 
     {% if request.GET.q %}
-    <h3 class="mt-4">Результаты поиска по запросу {{ request.GET.q }}</h3>
+    <h3 class="text-white mt-4">Результаты поиска по запросу {{ request.GET.q }}</h3>
     {% if not goods %}
         <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
-        <h2 class="mt-4">По запросу ничего не найдено</h2>
+        <h2 class="text-white mt-4">По запросу ничего не найдено</h2>
     {% endif %}
     {% endif %}
     {% for product in goods %}
@@ -85,7 +85,7 @@
                             {% if product.bodyline %}
                             {{product.bodyline|truncatechars:100}}
                             {% else %}
-                            {{ product.description|truncatechars:35 }}
+                            {{ product.description|truncatechars:30 }}
                             {% endif %}
                         {% endautoescape %}
                     </p>
@@ -93,11 +93,11 @@
                     <div class="d-flex justify-content-between">
 
                         {% if product.discount %}
-                            <p><s>{{product.price}}</s> $</p>
-                            <p><strong>{{ product.sell_price }} $</strong></p>
+                            <p><s>{{product.price}}</s> ₽</p>
+                            <p><strong>{{ product.sell_price }} ₽</strong></p>
                             <span class="badge bg-warning text-dark">Скидка {{ product.discount }} %</span>
                         {% else %}
-                            <p><strong>{{ product.price }} $</strong></p>
+                            <p><strong>{{ product.price }} ₽</strong></p>
                         {% endif %}
 
                         <a href="{% url "cart:cart_add" %}" class="btn add-to-cart"
@@ -147,7 +147,7 @@
 {% block footer %}
 <footer class="py-4 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Marmalade Coffee 2024</p>
     </div>
 </footer>
 {% endblock  %}
